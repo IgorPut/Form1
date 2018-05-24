@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="src/newcss.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <nav>
+                <ul>
+                    <li class="active"><img src="images/notepad.png" alt=""/><span class="nav-item">Описание</span></li>
+                    <li><img src="images/bottle.png" alt=""/><span class="nav-item">Ингредиенты</span></li>
+                    <li><img src="images/plate.png" alt=""/><span class="nav-item">Параметры</span></li>
+                    <li><img src="images/goblet.png" alt=""/><span class="nav-item">Бокалы</span></li>
+                </ul>
+            </nav>
+            <form action="" method="post" enctype="multipart/form-data" name="coctail">
+<!--                <fieldset class="description">
+                    <legend>
+                        <img src="images/notepadcopy.png" alt=""/>
+                        <span>Описание</span>
+                    </legend>
+                    <figure>
+                        <img src="images/pic.png" alt="" id="image"/>
+                            <div class="button" tabindex=1>
+                                <span>Загрузить</span>
+                                <input type="file" name="select_photo" id="imgInput" accept="image/*" tabindex='-1' />
+                            </div>
+                    </figure>
+                    <textarea name="coctail-name" rows="1" cols="60" placeholder="Название коктейля" ></textarea>
+                    <textarea name="alternative-coctail-name" rows="1" cols="60" placeholder="Альтернативное название через запятую" ></textarea>
+                    <textarea name="coctail-description" rows="6" cols="60" placeholder="Краткое описание" ></textarea>
+                    <textarea class="lasttextarea" name="coctail-instruction" rows="6" cols="60" placeholder="Инструкция для приготовления" ></textarea>
+                    <button class="next">Ингредиенты</button>
+                </fieldset>-->
+                <fieldset class="ingredients">
+                    <legend>
+                        <img src="images/bottlecopy.png" alt=""/>
+                        <span>Ингредиенты</span>
+                        <img src="images/strawberry.png" alt=""/>
+                    </legend>
+                    <div class="select-name">
+                        <select class="ingredient-name" name="ingredient-1">
+                            <option label="Название ингредиента"></option>
+                        </select>
+                    </div>
+                    <div class="input-count">
+                        <input type="number" class="ingredient-count" name="count-1" min=1 max=1000 step=1 value="1" />
+                    </div>
+                    <div class="select-unit">
+                        <select class="ingredient-unit" name="ingredient-3">
+                            <option label="мл"></option>
+                        </select>
+                    </div>
+    <!--                <div class="checkbox">-->
+                        <input type="checkbox" id="checkbox" name="checkbox" value="ON" checked="checked" />
+                        <label for="checkbox"></label>
+    <!--                </div>-->
+                </fieldset>
+            </form>
+        </div>
+        <script src="newjavascript.js" type="text/javascript"></script>
+    </body>
+</html>
